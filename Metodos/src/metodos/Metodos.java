@@ -97,4 +97,22 @@ public class Metodos {
             System.out.println("El mayor es: " + c);
         }
     }
+    
+    public static void hora(int a, int b, int c){
+        if (a>=0 && a<24 && b>=0 && b<60 && c>=0 && c<60) {
+            System.out.println("La hora es correcta");
+        }else{
+            System.out.println("La hora no es correcta");
+        }
+    }
+    
+    public static void meses(int mes){
+        if (mes == 1 && mes == 3 && mes == 5 && mes == 8 && mes == 10 && mes == 12) {
+            System.out.println("tiene 31 dias"); 
+        }else if(mes == 2){
+            System.out.println("Tiene 28 dias");
+        }else{
+            System.out.println("Tiene 30 dias");
+        }
+    }
 }
