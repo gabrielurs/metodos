@@ -57,13 +57,44 @@ public class Metodos {
         }
     }
     //if a>='a' && a<='z'
-    public static void minuscula(char a){
+    public static void minuscula(char a, char b){
         if (Character.isLowerCase(a)) {
-            System.out.println("Es minuscula");
+            System.out.println("La primera letra es minuscula");
         }else{
-            System.out.println("No es minuscula");
+            System.out.println("La primera letra no es minuscula");
+        }
+        
+        if (Character.isLowerCase(b)) {
+              System.out.println("La segunda letra es minuscula");
+        }else{
+            System.out.println("La segunda letra no es minuscula");
         }
     }
     
+    public static void condicional_7(char a){
+            if (Character.isDigit(a)){ //car1>='0' && car1<='9'
+                System.out.println("Esta entre 0 y 9");
+            }else{
+                System.out.println("No esta entre 0 y 9");
+            }
+    }
     
+    public static double condicional_8(double a, double b){
+        double resultado = a/b;
+        return resultado;
+    }
+    
+    public static void numeroMayor(int a, int b, int c){
+        if (a>b) {
+            if (a>c) {
+                System.out.println("El mayor es:" + a);
+            }else{
+                System.out.println("El mayor es: " + c);
+            }
+        }else if(b>c){
+            System.out.println("El mayor es: " + b);
+        }else{
+            System.out.println("El mayor es: " + c);
+        }
+    }
 }
