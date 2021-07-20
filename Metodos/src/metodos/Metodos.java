@@ -154,5 +154,22 @@ public class Metodos {
         }
     }
     
+    public static void positivosNegativosParesImpares(int a){
+        if (a<0) {
+            System.out.println("Es negativo");
+        }else{
+            System.out.println("Es positivo");
+        }
+        if (a%2==0) {
+            System.out.println("Es par");
+        }else{
+            System.out.println("Es impar");
+        }
+    }
+    public static double millasAKM(double millas){
+        double km=millas*1.6093;
+        return km;
+    }
+    
     
 }
