@@ -14,6 +14,7 @@ public class Metodos {
         System.out.println(conversionReaumur(centigrados));
 
         MostrarDesdeMenorAMayor(a, b);
+     
     }
 
     public static double conversionKelvin(double a) {
@@ -169,6 +170,17 @@ public class Metodos {
     public static double millasAKM(double millas){
         double km=millas*1.6093;
         return km;
+    }
+    
+    public static void numerodeCifras(int a){
+    int cont = 0;
+    
+        do {
+            a=a/10;
+            cont++;
+        } while (a!=0);
+        
+        System.out.println("El numero tiene " + cont + " cifras");
     }
     
     
