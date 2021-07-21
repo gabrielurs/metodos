@@ -1,4 +1,5 @@
 package metodos;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Metodos {
@@ -14,6 +15,8 @@ public class Metodos {
         System.out.println(conversionReaumur(centigrados));
 
         MostrarDesdeMenorAMayor(a, b);
+        
+        tablaMultiplicar(10);
      
     }
 
@@ -183,5 +186,23 @@ public class Metodos {
         System.out.println("El numero tiene " + cont + " cifras");
     }
     
+    public static void gradosKelvin(double a) throws IOException{
+        double k;
+        char b;
+        System.out.println("Quiere repetir el proceso?");
+        do {
+        b = (char)System.in.read();
+        k=a+273;
+        } while (b=='S' || b =='s');
+        System.out.println(k);
+    }
     
+    public static void tablaMultiplicar(int a){
+        System.out.println("Tabla del " + a);
+        System.out.println("--------------------");
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(a +" * " + i + " = " + a*i);
+        }
+        System.out.println("--------------------");
+    }
 }
