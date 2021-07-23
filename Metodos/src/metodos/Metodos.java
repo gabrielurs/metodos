@@ -205,4 +205,15 @@ public class Metodos {
         }
         System.out.println("--------------------");
     }
+    
+    public static void numeroNegativo(int a){
+        int contador=0;
+        do {            
+            if (a%10==2) {
+                contador++;
+            }
+        } while (a!=-1);
+        
+        System.out.println(contador);
+    }
 }
